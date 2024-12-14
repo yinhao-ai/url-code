@@ -6,3 +6,7 @@ You can quickly access the website set by the other party by entering the code y
 The source code is currently in Chinese. If you need it, you can translate it into English!
 
 This code was assisted by the original author Yinhao and ChatGPT
+
+This project is beautified by ChatGPT
+
+---------------------------------------------------------------------------------------------------------
