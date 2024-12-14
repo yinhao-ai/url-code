@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ChatCYH URL Code</title>
+    <title>URL Code</title>
     <style>
         body {
             margin: 0;
@@ -52,7 +52,7 @@
 </head>
 <body>
     <div class="container">
-        <h1 class="title">ChatCYH URL Code</h1>
+        <h1 class="title">URL Code</h1>
         <form method="GET" action="redirect.php">
             <input type="text" name="code" class="input-box" placeholder="输入代码以重定向" required>
             <input type="password" name="password" class="input-box" placeholder="输入密码（如果需要）">
