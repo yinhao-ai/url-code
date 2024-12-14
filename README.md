@@ -15,4 +15,10 @@ The ownership of this code belongs to Yinhao Chen. Please be sure to leave Yinha
 
 The code has been deployed to the website. You can visit: https://dash.cyhsite.cyou/urlcode to view the website
 
+If you have any suggestions, you can provide content feedback by visiting https://dash.cyhsite.cyou/feedback/feedback.html. If the website is inaccessible, please contact Cyinhaos@outlook.com
+
+This code will be maintained for a long time! Don't worry about not updating! We will further solve and fix bugs
+
+Thank you
+
 
