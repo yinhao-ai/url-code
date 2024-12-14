@@ -9,4 +9,10 @@ This code was assisted by the original author Yinhao and ChatGPT
 
 This project is beautified by ChatGPT
 
----------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------
+
+The ownership of this code belongs to Yinhao Chen. Please be sure to leave Yinhao Chen's name when you deploy it!
+
+The code has been deployed to the website. You can visit: https://dash.cyhsite.cyou/urlcode to view the website
+
+
