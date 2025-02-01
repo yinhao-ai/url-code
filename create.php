@@ -1,17 +1,17 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $url = $_POST['url'] ?? '';
-    $code = substr(md5(uniqid()), 0, 6); // 随机生成6位代码
+    $code = substr(md5(uniqid()), 0, 6); // Generate a random 6-character code
     $password = $_POST['password'] ?? '';
 
-    // 保存到文件 (简单存储，生产环境应使用数据库)
+    // Save to file (simple storage, database recommended for production)
     $data = [
         'url' => $url,
         'password' => $password
     ];
     file_put_contents("data/$code.json", json_encode($data));
 
-    echo "<script>alert('创建成功！您的代码是：$code'); window.location.href='index.php';</script>";
+    echo "<script>alert('Created successfully! Your code is: $code'); window.location.href='index.php';</script>";
     exit;
 }
 ?>
@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>创建链接 - ChatCYH URL Code</title>
+    <title>Create Link - ChatCYH URL Code</title>
     <style>
         body {
             margin: 0;
@@ -29,6 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             color: #fff;
             font-family: Arial, sans-serif;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
@@ -64,16 +65,26 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         .button:hover {
             background-color: #0056b3;
         }
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #ccc;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1 class="title">创建链接</h1>
+        <h1 class="title">Create Link</h1>
         <form method="POST">
-            <input type="url" name="url" class="input-box" placeholder="输入URL" required>
-            <input type="text" name="password" class="input-box" placeholder="设置密码（可选）">
-            <button type="submit" class="button">创建</button>
+            <input type="url" name="url" class="input-box" placeholder="Enter URL" required>
+            <input type="text" name="password" class="input-box" placeholder="Set password (optional)">
+            <button type="submit" class="button">Create</button>
         </form>
+    </div>
+
+    <div class="footer">
+        <p>Do not create prohibited URLs!</p>
     </div>
 </body>
 </html>
